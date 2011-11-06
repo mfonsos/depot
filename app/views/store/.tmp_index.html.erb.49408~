@@ -1,12 +1,7 @@
 <% if notice %>
 <p id="notice"><%= notice %></p>
 <% end %>
-<h1><%= 
-  if @display_counter
-    pluralize(@counter,'counter')
-  end
-%></h1>
-
+<h1><%=pluralize(@counter,'counter')%></h1>
 <h1>Your Pragmatic Catalog</h1>
 
 <% @products.each do |product| %>
